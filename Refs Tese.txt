@@ -1,0 +1,141 @@
+[1] Lee et al., 2020 - This reference is used multiple times throughout the thesis, primarily to introduce the concept of using machine learning-based techniques for assessing and providing personalized interaction in socially assistive robots (SAR) for rehabilitation. It forms a foundation for many discussions, especially the hybrid model that combines machine learning and rule-based systems.
+
+[2] Kuo et al., 2023 - This reference is used in Chapter 1 to provide context on adherence rates for rehabilitation programs. It highlights the statistic that approximately 42% of patients fail to adhere to their rehabilitation schedules, underlining the need for better motivation strategies—potentially through SAR.
+
+[3] Li, 2018 - This reference is used in Chapter 2 when discussing reinforcement learning (RL) techniques. It provides a general explanation of RL as a framework for developing personalized interaction models for SARs.
+
+[4] Puterman, 1990 - Referenced in the section on Markov Decision Processes (MDP), this citation gives foundational theoretical support for modeling decision-making problems with RL, specifically as applied to SARs
+
+[5] Duan et al., 2016 - This reference supports the explanation of reinforcement learning in MDPs, particularly in the context of continuous control. It provides benchmarks that support the reinforcement learning approach used in the thesis.
+
+[6] Berk, 2008 - The reference to CART (Classification and Regression Trees) is used in Chapter 2, providing the basis for using decision trees to classify rehabilitation exercise components and explaining the use of binary trees for creating generalizable models.
+
+[7] Ying, 2019 - This is cited in the section explaining overfitting, specifically how regularization techniques like L1 and L2 are used to prevent overfitting when modeling the patient’s movements in SAR settings.
+
+[8] Lorena & Carvalho, 2007 - This reference explains Support Vector Machines (SVM), detailing its use for feature classification in assessing rehabilitation exercises.
+
+[9] Bishop, 1995 - This foundational text on neural networks is referenced to explain how artificial neural networks are applied in rehabilitation contexts for predicting the quality of patient motion.
+
+[10] Bao & Liu, 2006 - Used in the description of hyperparameter tuning for machine learning models, specifically the use of grid search to find optimal parameters for different algorithms.
+
+[11] Smagulova & James, 2019 - This reference provides background on Long Short-Term Memory (LSTM) networks and their ability to retain long-term dependencies, useful in modeling sequential patient data during rehabilitation exercises.
+
+[12] Tapus et al., 2007 - This citation describes the broad field of socially assistive robotics, providing context for the use of robots in rehabilitation settings. It underpins much of the related work section, discussing the potential and challenges of SAR in healthcare.
+
+[13] Mataric et al., 2007 - This study is referenced to discuss early applications of SARs in post-stroke rehabilitation, providing evidence that robotic systems can be effective in supporting physical therapy.
+
+[14] Fasola & Mataric, 2013 - This study is cited to emphasize the impact of physically embodied robots compared to virtual agents in rehabilitation contexts, with physically embodied robots being more engaging for elderly patients.
+
+[15] Giansanti, 2021 - This reference addresses ethical considerations in using SARs for healthcare. It highlights privacy and autonomy concerns, providing a broader context for the ethical deployment of SARs.
+
+[16] Lee et al., 2020 - Cited in the description of the dataset, this reference details the three stroke rehabilitation exercises used for testing SAR capabilities, providing crucial experimental data.
+
+[17] Sanford et al., 1993 - Referenced when describing stroke rehabilitation exercises, this citation is used to provide background on the assessment metrics used for evaluating rehabilitation performance.
+
+[18] Pulido et al., 2019 - This study is used to illustrate current definitions and concepts of socially assistive robotics, highlighting their applications in pediatric rehabilitation.
+
+[19] Lee et al., 2019 - This reference provides details on the feature extraction methods from patient exercises, specifically using kinematic data to model the quality of movements.
+
+[20] Lee et al., 2020 - This citation elaborates on rule-based models and the semi-structured interviews with therapists, providing rules that underpin the personalized feedback systems for SAR.
+
+[21] Lee et al., 2020 - This reference is used to introduce the hybrid model that combines rule-based and machine learning models, aiming for a more comprehensive and accurate assessment system.
+
+[22] Lee, 2019 - Cited in the discussion of intelligent agents, this reference provides an overview of how such agents are used in assessing rehabilitation exercises, forming part of the decision-making framework of SARs.
+
+[23] Baltrušaitis et al., 2018 - This reference discusses multimodal machine learning and its relevance to SARs, highlighting how multiple data types (e.g., visual, kinematic) can be used to enhance robot-patient interaction.
+
+[24] Duan et al., 2016 - This citation is used to benchmark reinforcement learning methods, providing a comparison between deep RL approaches for continuous control, relevant to optimizing the SAR guidance process.
+
+Links que podem vir a poder ser referências:
+https://users.cs.duke.edu/~parr/icml02.pdf - Coordinated Reinforcement Learning (other way of Reinforcement Learning that might be good to refer if needed)
+https://github.com/openai/gym - OpenAI Gym library (Refer as software used probably)
+https://imitation.readthedocs.io/en/latest/index.html - Imitation Learning library(software e ref está no site)
+https://stable-baselines3.readthedocs.io/en/master/index.html - Stable-Baselines3 library(software)
+
+Neuroplasticity and how exercising can help the brain regenerate (more for curiosity if you are interested):
+https://link.springer.com/article/10.1186/1755-7682-6-41
+https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2017.00076/full
+
+Therapy approaches: https://crsn.ca/images/upper-extremity-toolkit-update-2017-final.pdf
+
+Barriers and facilitators to effective rehabilitation
+https://onlinelibrary.wiley.com/doi/abs/10.1002/j.2048-7940.2007.tb00183.x
+https://www.tandfonline.com/doi/abs/10.1080/10749357.2018.1544845
+
+Exercise recommendations after stroke & importance of task-oriented exercises:
+https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000022
+https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2648.2008.04925.x
+
+
+#######################################################################################################################################################################################################################################
+
+
+
+
+To enhance the completeness of your thesis and integrate the provided materials, here's a guide on how to incorporate each of the bibliographic references, the newly provided links, and the implementation details from "try9.ipynb" into the file "Thesis_Diogo_Gregório.pdf":
+
+Suggested Incorporation of References and Additional Materials
+[1] Lee et al., 2020 & [2] Kuo et al., 2023:
+
+Current Usage: Both references are already used to justify the necessity of SARs in rehabilitation, patient adherence issues, and the general motivation for personalization.
+Suggested Enhancement: Further expand on the efficacy of personalized interaction models by integrating specific outcomes and success rates for SARs from these references. Mention their relevance to reinforcement learning's role in the improvement of SAR models.
+Reinforcement Learning Reference - Coordinated Reinforcement Learning (https://users.cs.duke.edu/~parr/icml02.pdf):
+
+Suggested Section: Add this as an expansion under "2.1 Reinforcement Learning" in Chapter 2.
+Purpose: Use this reference to discuss another approach to reinforcement learning—coordinated reinforcement learning—and how it differs or complements existing methods in rehabilitation contexts. It will add depth to your discussion of reinforcement learning strategies used for SARs.
+OpenAI Gym and Other Libraries:
+
+https://github.com/openai/gym: Mention this library in Chapter 3 - Implementation under the numerical model subsection. Use it to explain how simulation environments were set up for training SARs in rehabilitation exercises.
+https://imitation.readthedocs.io/en/latest/index.html: Include this link in a section about Imitation Learning Techniques. It provides a background of how imitation learning was applied to personalize rehabilitation.
+https://stable-baselines3.readthedocs.io/en/master/index.html: Use this reference when discussing Reinforcement Learning Models, especially to explain how Stable Baselines3 was used for creating models based on the Proximal Policy Optimization (PPO) algorithm.
+Neuroplasticity and Exercising (https://link.springer.com/article/10.1186/1755-7682-6-41, https://www.frontiersin.org/journals/cellular-neuroscience/articles/10.3389/fncel.2017.00076/full):
+
+Suggested Chapter: Add a subsection in Chapter 1 - Introduction.
+Purpose: Use these references to provide a motivational foundation regarding the biological effects of rehabilitation and SAR's potential influence on neuroplasticity. It will strengthen the argument on why rehabilitation exercises can be essential for brain function recovery.
+Therapy Approaches for Upper Extremity Rehabilitation (https://crsn.ca/images/upper-extremity-toolkit-update-2017-final.pdf):
+
+Suggested Usage: Refer to this document in the Stroke Rehabilitation Studies section of Chapter 2 to detail current rehabilitation protocols and how SARs can be adapted to fit these existing frameworks.
+Barriers and Facilitators to Effective Rehabilitation (https://onlinelibrary.wiley.com/doi/abs/10.1002/j.2048-7940.2007.tb00183.x, https://www.tandfonline.com/doi/abs/10.1080/10749357.2018.1544845):
+
+Suggested Placement: These references can be used in a Challenges in Rehabilitation subsection.
+Purpose: Use these references to discuss the main barriers to successful rehabilitation and how SARs address some of these barriers through personalized assistance and monitoring.
+Exercise Recommendations and Importance of Task-Oriented Exercises (https://www.ahajournals.org/doi/full/10.1161/STR.0000000000000022, https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2648.2008.04925.x):
+
+Suggested Placement: Use in Chapter 3 - Implementation where exercises are described.
+Purpose: These references will provide a clinical backing for the exercise selection and how SARs facilitate these task-oriented exercises.
+try9.ipynb Integration:
+
+The code in try9.ipynb can be referenced in Chapter 3 - Numerical Model:
+Hyperparameters and Environment Setup: Explain the experimental setup using the hyperparameters defined in the code, such as batch size, learning rate, and episode count. You can state that these were used to optimize the training of SARs.
+Use of Stable Baselines and Custom Environments: Mention that you used the Stable Baselines3 library and a Custom Gym Environment for training the model. Include details about PPO, as implemented in your custom environment, and discuss how the code allowed SARs to provide personalized movement guidance.
+Data Processing and Feature Engineering: In Chapter 3, explain the methods for loading and aligning data as was done in the notebook. Show how this data alignment and averaging were critical in training SARs to recognize healthy versus rehabilitation-specific movements.
+Figure Integration: Use screenshots of animations or visualizations to demonstrate what the final SAR-guided exercise predictions looked like, if they were created. It helps to visualize the outcome of SAR-based guided movements.
+Examples of New Sections/Edits
+Chapter 2: Reinforcement Learning
+Addition on Coordinated Reinforcement Learning: Include a new paragraph that discusses how Coordinated Reinforcement Learning (as detailed by Parr et al.) could potentially enhance the interaction of multiple SARs working in coordination with therapists or even with each other.
+Chapter 3: Implementation
+Libraries and Tools: Mention the use of OpenAI Gym and Stable Baselines3. Explain that these tools enabled efficient creation and testing of reinforcement learning algorithms in a controlled environment.
+Chapter 4: Results
+Performance Evaluation: Evaluate the performance of different approaches, such as PPO and Imitation Learning, using metrics like accuracy, F1-score, and total reward as implemented in the notebook. You could show how these approaches differ in their ability to predict human joint movement during different rehabilitation exercises.
+Bibliography Section
+Add all new links as references and assign them appropriate citations in the text. Make sure to use consistent formatting as per your style guide (e.g., IEEE, APA, etc.).
+This plan should integrate all relevant materials into your thesis effectively, enhancing its scientific credibility and depth. Let me know if you need more detailed suggestions on specific sections or additional assistance with formatting these references in your thesis.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

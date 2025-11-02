@@ -1,0 +1,214 @@
+Quem e o quê
+
+Quidgest é uma empresa global de origem portuguesa, com sede em Lisboa. 
+Quidgest
++2
+Quidgest
++2
+
+Está há mais de 30 anos (fundada em 1988) no mercado de engenharia de software. 
+Quidgest
++1
+
+Especializa-se em “model-driven engineering” e geração automática de código, sobretudo através da sua plataforma própria chamada Genio. 
+Quidgest
++2
+Quidgest
++2
+
+A empresa trabalha em diversos domínios de software de gestão (recursos humanos, finanças, compliance, logística, etc.). 
+Quidgest
++1
+
+Cultura, missão e valores
+
+Visão: Ser uma referência como fornecedor de “software à medida” (custom made) e reconhecida pela excelência. 
+Quidgest
+
+Missão: Criar valor para clientes e parceiros, participar da revolução tecnológica, desenvolver competências nos colaboradores. 
+Quidgest
+
+A empresa valoriza inovação, qualidade, participação e desenvolvimento das competências dos funcionários. 
+Quidgest
++1
+
+Tecnologia & plataforma relevante
+
+A plataforma Genio permite gerar software para múltiplas tecnologias: suportando web, mobile, bases de dados, diferentes linguagens. 
+Quidgest
++1
+
+Destaca-se por usar modelagem em vez de “apenas escrever código”, ou seja, abstração mais elevada. 
+Quidgest
++1
+
+Tecnologias mencionadas: ASP.NET MVC, C#/.NET, WCF, bases de dados SQL Server, Oracle, MySQL. 
+Quidgest
+
+A empresa certifica-se em normas de qualidade (ISO 9001, ISO 27001, etc.). 
+Quidgest
+
+Relevância para a vaga (Software Engineer – RH/Recruitment/Performance Management)
+
+Na área de Recursos Humanos / recrutamento / gestão de desempenho, vais integrar-te num domínio de “software de gestão” ou “sistemas de informação de gestão”, que é exactamente o core da Quidgest.
+
+Importa mostrares familiaridade ou aptidão para modelagem, abstração, reutilização de componentes — porque a Genio trabalha nesse espírito.
+
+Também é provável que se valorize o teu entendimento de ciclo de vida do software: desenho, implementação, manutenção, evolução — não apenas “escrever código”.
+
+Dado que vais entrevistar com o CTO da área de software de RH/recrutamento/gestão de desempenho, prepara-te para falar de como construir sistemas que suportem workflows de RH: e.g., cadastro de candidatos, entrevistas, avaliação de desempenho, relatórios, dashboards, integração com bases de dados de colaboradores, etc.
+
+Alguns “inputs” para a entrevista técnica
+
+Prepara-te para mostrar capacidade para discutir padrões de design (por exemplo para módulos de RH: Avaliação, Feedback, Histórico de Colaboradores, Workflows), arquitetura limpa, manutenção e escalabilidade.
+
+Prepara-te para perguntas de lógica de programação, estruturas de dados e algoritmos — embora o foco seja mais “software engineering” do que “puzzle puro”.
+
+Prepara-te para falar de integração/compatibilidade/legado — já que a Quidgest tem actuação em sistemas legados e atualização de plataformas obsoletas nas suas soluções. 
+Quidgest
++1
+
+Assume que te podem perguntar como modelarias entidades para RH, por exemplo “Colaborador”, “Avaliação de desempenho”, “Feedback”, “Plano de desenvolvimento”, e como o sistema evoluiria no futuro.
+
+Dicas práticas para a entrevista
+
+Mostra-te entusiasmado com inovação tecnológica, automação, geração de código/modelagem — esses são “sell-points” da Quidgest.
+
+Exemplo: “Vi que a plataforma Genio permite acelerar muito o desenvolvimento usando modelagem — e estou interessado em como isto se aplica em soluções de RH, onde há muitos processos repetitivos e bastante lógica de negócio”.
+
+Usa exemplos da tua experiência onde tiveste de modularizar código, reutilizar componentes, pensar em manutenção ou escalabilidade.
+
+Pergunta ao CTO: “Como é que integram vocês novas funcionalidades de RH (por exemplo gamificação de desempenho) na plataforma existente?” ou “Qual é o maior desafio técnico que a equipa de RH enfrenta neste momento, em termos de dados ou de workflow?”
+
+Prepara-te para demonstrar que sabes trabalhar em equipa, comunicar bem com stakeholders de negócio (RH, recrutamento) e traduzir requisitos de negócio em soluções técnicas — algo que encaixa bem no perfil da empresa.
+
+Parte 2 – Exemplos de exercícios de programação/lógica adaptados à área de RH/recrutamento/gestão de desempenho
+
+Aqui vão alguns exercícios que podes praticar, adaptados ao contexto da vaga — depois segue-se cada exercício com uma indicação de como o podes resolver. Idealmente resolves em C# ou Java (ou outra linguagem de preferência suportada pela empresa) para treinar.
+
+Exercício 1: “Match de Candidatos a Vagas”
+
+Descrição: Tens um conjunto de candidatos e um conjunto de vagas. Cada candidato tem um conjunto de competências (strings) e cada vaga também. Queremos encontrar para cada vaga os 3 candidatos “melhores” em termos de número de competências que coincidem.
+Entrada: Lista de candidatos: cada candidato = (ID, nome, lista competências). Lista de vagas: cada vaga = (ID, título, lista competências exigidas).
+Saída: Para cada vaga, lista dos top 3 IDs de candidatos que mais competências têm em comum com a vaga (ordenados decrescente por número de competências em comum, e por ID em caso de empate).
+Exemplo simples:
+
+Candidatos:
+1, Ana, [ "C#", "SQL", "Team-lead" ]
+2, Bruno, [ "Java", "SQL", "React" ]
+3, Carla, [ "C#", "React", "SQL" ]
+4, Daniel, [ "C#", "SQL" ]
+
+Vagas:
+10, Desenvolvedor C#, [ "C#", "SQL" ]
+11, Front-end React, [ "React", "CSS", "HTML" ]
+
+Saída esperada:
+Vaga10 -> [1,4,3]   (Ana tem 2 competências que coincidem, Daniel 2, Carla 2 — desempate por ID)
+Vaga11 -> [3,2,1]   (Carla tem "React", Bruno tem "React", Ana tem nenhuma, logo Carla (1), Bruno (1), Ana (0) )
+
+
+Como resolver:
+
+Para cada vaga, percorre todos candidatos e calcula matchCount = número de competências em comum (usar Set de competências para cada lado).
+
+Armazena pares (candidateID, matchCount), ordena por matchCount desc, candidateID asc, e escolhe os top3.
+
+Complexidade: se N candidatos, M vagas, K competências por candidato/vaga, complexidade ~O(N·M·K) que para tamanhos moderados está bem.
+
+Em C#: podes usar HashSet<string> para competências, List<Tuple<int,int>> para resultados, Sort com custom comparer.
+
+Pensa em casos de fronteira: menos de 3 candidatos, candidatos sem competências, vagas sem competências etc.
+
+Exercício 2: “Histórico de Avaliações de Desempenho”
+
+Descrição: Tens registos de avaliações de colaboradores: cada registo = (colaboradorID, dataAvaliação, pontuação [0–10]). Implementa uma função que para cada colaborador devolve a tendência da avaliação entre as últimas N avaliações: “subindo”, “estável” ou “descendo”.
+Entrada: Lista de avaliações para múltiplos colaboradores, e N (integer).
+Saída: Dicionário/Map de colaboradorID → string (“subindo”, “estável”, “descendo”).
+Regra: Ordena as avaliações de cada colaborador por data descrescente, pega nas últimas N pontuações p1, p2, …, pN (p1 mais recente). Se p1 > p2 > p3 > … (todas em sequência estrita), então “subindo”. Se p1 < p2 < p3 < …, “descendo”. Caso contrário, “estável”. Se houver menos de N avaliações, devolve “estável”.
+Como resolver:
+
+Agrupa os registos por colaborador (por exemplo Dictionary<int,List<Avaliacao>> em C#).
+
+Para cada colaborador: ordena as suas avaliações por data descrescente, pega nas primeiras N se existirem, verifica a sequência.
+
+Utiliza lógica simples de iteração para ver se cada elemento é maior que o próximo (para “subindo”), ou menor (para “descendo”), ou se não se encaixa → “estável”.
+
+Testa casos: N = 1 (automaticamente “estável” pois não há sequência), igual pontuações (ex: 7,7,7) → “estável”.
+
+Exercício 3: “Organograma de RH / Hierarquia de Colaboradores”
+
+Descrição: Na gestão de desempenho, há frequentemente uma estrutura hierárquica (um gestor com vários subordinados, que por sua vez podem ter subordinados). Dado uma lista de relações “gestorID → colaboradorID”, implementa duas funcionalidades:
+
+Função que, dado um colaboradorID, devolve o nível hierárquico desse colaborador (nível 0 se for o topo, nível 1 se reporta directamente ao topo, etc).
+
+Função que, dado um colaboradorID, devolve a lista de IDs de todos os colaboradores que estão abaixo desse colaborador na hierarquia (todos os subordinados directos e indirectos).
+Entrada: Lista de pares (gestorID, colaboradorID), e depois queries para cada função.
+Como resolver:
+
+Constrói um grafo dirigido ou uma Dictionary<int,List<int>> onde para cada gestorID tens lista dos seus subordinados directos.
+
+Para a função 1: percorre “para cima” (se tens também mapeamento colaborador → gestor) até encontrares o topo (gestor que não aparece como colaborador) contando níveis.
+
+Para a função 2: faz DFS ou BFS a partir do nó colaboradorID como raiz, e recolhe todos os nós alcançáveis.
+
+Considera casos de ciclos (idealmente não deveria haver, mas a função poderia detectar e evitar loop infinito) ou colaboradores sem gestor (topo).
+
+Complexidade: se número de nodos = V e arestas = E, função 2 tem O(V+E) no pior caso.
+
+Exercício 4: “Planeamento de Entrevistas / Disponibilidade”
+
+Descrição: Uma equipa de recrutamento quer agendar entrevistas para candidatos com vários entrevistadores. Tens uma lista de colaboradores (entrevistadores) e a sua disponibilidade em dias/hora-blocos, e uma lista de candidatos que têm também disponibilidade. Queremos atribuir cada candidato a um entrevistador num horário que funcione para ambos. Implementa uma função simples que devolve um agendamento ou indica que não foi possível para algum candidato.
+Entrada: Para cada entrevistador: colaboradorID + lista de horários disponíveis (por ex “2025-10-24 10:00–11:00”, “2025-10-24 14:00–15:00”). Para cada candidato: candidatoID + lista de horários disponíveis. Queremos produzir lista de (candidatoID, entrevistadorID, horário).
+Como resolver:
+
+Uma abordagem simples: para cada candidato da lista, percorre a lista de entrevistadores e tenta encontrar um horário disponível que coincida entre eles. Se encontrar, marca o horário como ocupado para ambos e passa ao próximo candidato.
+
+Usa estruturas como Dictionary<entrevistadorID, HashSet<horario>> e Dictionary<candidatoID, HashSet<horario>>.
+
+Ordena candidatos (talvez pelo número de disponibilidades menor primeiro para optimizar).
+
+Considera casos onde algum candidato não encontra horário → devolve “Não foi possível agendar para todos”.
+
+Pensa em melhorias: algoritmo de “matching bipartido” entre candidatos e horarios+entrevistadores (se quiseres elevar o nível técnico).
+
+Parte 3 – Como podes conjugar os dois – o “company + exercício técnico”
+
+Antes da entrevista, escolhe uma ou duas das tarefas de programação acima e resolve-as ** na linguagem que vais usar** (C# ou Java). Comentando bem o teu raciocínio.
+
+Durante a entrevista, ao te pedirem um exercício “leve”, podes propor: “Posso usar como base um cenário de recrutamento/entrevistas, para ligar com o vosso domínio de RH.” Isto mostra alinhamento com o negócio da empresa (RH/recrutamento/gestão de desempenho).
+
+Depois de escreveres o código, aproveita para discutir como se encaixaria no contexto da Quidgest: por exemplo, como modelarias isso na plataforma Genio, como as entidades seriam definidas, como evoluiria a funcionalidade, como garantiria manutenção.
+
+Quando quiserem fazer perguntas de arquitectura ou design, pega num destes exercícios e pergunta: “Se fossemos escalar para 10 000 colaboradores, ou integrar com outros sistemas de HR, como o modificarias?” Mostra que pensas além do código imediato.
+
+
+
+✅O que os candidatos relatam
+
+Um candidato para vaga de Software Engineer descreveu:
+
+“entrevista normal para conhecer o percurso profissional e académico e termina com uma série de problemas técnicos simples de SQL e C que deram para ser feitas em 15 minutos, basta preencher os espaços indicados, não é necessário fazer código de raíz.” 
+Glassdoor
+
+Em geral, o processo de entrevista consta de: triagem inicial, seguido de uma ou várias entrevistas (virtuais ou presenciais) com gestor ou HR, e pode incluir teste de competências ou amostra de trabalho. 
+Glassdoor
++1
+
+No site de revisões, nota-se que a “dificuldade das entrevistas” é relatada como média/relativamente leve: por exemplo, no Teamlyzer uma média de 44/100 para dificuldade. 
+Teamlyzer
+
+No anúncio de entrevistas no Glassdoor: o processo médio foi descrito como “muito fácil e relaxado” por um candidato de estágio/trabalho leve. 
+Glassdoor
+
+🎯 O que podes inferir / preparar com base nesses relatos
+
+Espera questões técnicas relativamente simples ou moderadas: no relato, problemas de SQL e C que eram “preencher espaços” ou completar código em parte. Logo, não necessariamente um desafio algoritmico ultra-complexo.
+
+Certamente será valorizado que consigas comunicar o teu background profissional e académico de forma clara — houve candidatos que disseram que a parte “quem és / o que fizeste” foi grande parte da entrevista.
+
+Como vais entrevistar com o CTO da área de software de RH/recrutamento/gestão de desempenho, prepara-te para combinar essas competências técnicas com domínio da lógica de negócio (RH, recrutamento, desempenho) e perguntas “porquê quiseres esta empresa / este papel”.
+
+Apesar de relatos de “relaxa” ou “leve”, prepara-te para que também possam avaliar qualidade do código, clareza de pensamento, capacidade de modelagem ou abstração — especialmente dada a natureza da Quidgest (plataforma de geração automática de código) e o papel técnico para RH.
+
+Mesmo que os problemas técnicos sejam “simples”, pratica algoritmos e SQL para estar a postos — e prepara-te para fazer “completa o código”, “corrige este query”, “explique este fragmento”.

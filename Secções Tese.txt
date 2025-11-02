@@ -1,0 +1,293 @@
+Secções Tese:
+
+Acknowledgments-> X
+
+Resumo-> Done
+
+Abstract-> Done
+
+Introduction-> Done
+
+Motivation-> Done
+
+Topic Overview -> Done
+
+Objectives and Deliverables -> Done
+
+Thesis Outline -> Done
+
+Background -> Done
+
+Rehabilitation Challenges and the Role of SARs -> Done
+
+Reinforcement Learning and Markov Decision Processes -> Done  
+
+Imitation Learning for Enhanced Adaptability -> Done
+
+State of the Art in SAR Development -> Done
+
+Ethical Considerations in SAR Deployment -> Done
+
+Summary -> Done
+
+Implementation -> Done
+
+Models -> Done
+
+Algorithm Implementation -> Done
+
+Verification and Validation -> Done
+
+Results -> Done
+
+Problem Overview and Baseline Evaluation -> Done
+
+Enhanced Models and Implementation Results -> Done
+
+Behavioral Cloning (BC) -> Done
+
+Proximal Policy Optimization (PPO) -> Done
+
+Generative Adversarial Imitation Learning (GAIL) -> Done
+
+Performance Evaluation -> Done
+
+Mean Squared Error (MSE) Analysis -> Done
+
+Cross-Validation Results -> Done
+
+Summary of Results -> Done
+
+Visualization of Training Progress -> Done
+
+Conclusions -> Done
+
+Achievements -> Done
+
+Future Work -> Done
+
+Bibliography -> Done
+
+Appendixes -> Done
+
+Nomenclature -> Done
+
+####################################################################################################################################################################
+
+NEW TASK
+
+Ir fazer alterações baseado em: 
+	-código e alterações que têm de ser feitas nele ainda
+	-pdfs da Ana e pô-los como refs -> Done
+	-comentários que eu tinha posto 
+	-pôr imagens
+	-confirmar que está tudo factualmente correto
+	-AI text detector
+
+2. Exploratory Data Analysis (EDA) 
+What to Do:
+Conduct and document the Exploratory Data Analysis (EDA) of the dataset involving 15 post-stroke survivors.
+
+How:
+Use the Try9.ipynb notebook to:[FEITO, maybe fazer reparos ter em conta a kinetic câmera 30fps, maybe change how to get the cumulative progress and make it analyze the trained output as well]
+Load the dataset of post-stroke survivors.
+Conduct EDA by computing summary statistics (mean, median, standard deviation) and plotting relevant visualizations such as histograms of joint movement range, scatter plots of velocity vs. movement angle, and line plots showing different patients’ progress over time.
+Extract kinematic features like velocity, joint angles, and range of motion.
+Add these visualizations and descriptive analysis in the thesis.
+
+Where:
+Document these findings in Chapter 3 (Implementation) as a new section titled "Exploratory Data Analysis of Rehabilitation Dataset."
+Describe the purpose and outcomes of EDA, such as identifying trends or outliers and explaining any data preprocessing (e.g., handling missing values).
+
+
+3. Baseline Heuristic Approach for Goal Adjustment
+What to Do:
+Implement a simple heuristic as a baseline for adjusting the rehabilitation goals.
+
+How: [FEITO make it analyze the trained output as well]
+Implement a heuristic in the Try9.ipynb notebook that decreases the exercise goal (e.g., by 50%) if the patient fails to complete the exercise successfully. This involves adding logic in the code that adjusts the goal position based on success rates.
+Then, evaluate this heuristic model.
+
+Where:
+Add a subsection titled "Baseline Heuristic Approach" in Chapter 4.1 (Problem Overview and Baseline Evaluation).
+Include an explanation of how the heuristic works, its pros and cons, and a brief comparison with learning-based approaches.
+
+
+4. Feed-Forward Neural Network for Trajectory Prediction
+What to Do:
+Develop a feed-forward neural network to predict the patients’ joint trajectories.
+
+How:[Feito]
+In the Try9.ipynb notebook, implement a simple feed-forward neural network using PyTorch to predict future joint positions based on past positions.
+Train this model on the dataset and use MSE as a loss metric to evaluate its performance.
+
+Where:
+Document the implementation in Chapter 3.1 (Model’s Implementation) as a section titled "Feed-Forward Neural Network for Trajectory Prediction."
+Include training details (e.g., hyperparameters, training time) and its effectiveness in predicting the patient's movement trajectories.
+
+
+5. Transfer Learning Techniques for Adaptation
+What to Do:
+Explore Transfer Learning techniques for efficiently adapting the predictive models for new patients.
+
+How:[Feito]
+Add logic in the Try9.ipynb notebook that takes a model trained on existing patients and fine-tunes it for a new patient using a smaller number of data samples.
+Report on different strategies, such as feature extraction and fine-tuning.
+Where:
+Add this under Chapter 4.2 (Enhanced Solution) as a subsection named "Transfer Learning for Patient Adaptation."
+Include a comparison with the models trained from scratch to show the efficiency of transfer learning.
+
+6. Model-Based Reinforcement Learning (MBRL)
+What to Do:
+Implement Model-Based Reinforcement Learning (MBRL) and compare it with other approaches.
+
+How:[Feito]
+
+Use the Try9.ipynb notebook to implement an MBRL approach where you first create an approximate model of the patient's joint dynamics and then use Dynamic Programming or Model Predictive Control (MPC) to plan optimal actions.
+Compare this with PPO and the heuristic method (gráficos).
+Where:
+Add this in Chapter 4.2.3 (Generative Adversarial Imitation Learning), followed by a new subsection titled "Model-Based Reinforcement Learning Comparison."
+Include a detailed performance comparison in Chapter 4.3 (Performance Evaluation).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. Referencing Tools and TensorBoard Graphs
+What to Do:
+Add sections referencing tools like OpenAI Gym, TensorBoard, and SB3.
+
+How:
+Mention their specific use cases:
+OpenAI Gym for creating the rehabilitation exercise simulation.
+TensorBoard to visualize training metrics (e.g., reward progression, loss).
+SB3 for implementing RL algorithms such as PPO and GAIL.
+Add TensorBoard graphs showing reward evolution during training for a single patient across different reward functions. Export graphs from TensorBoard and add them as figures.
+Where:
+Add this in Chapter 3.1.1 (Algorithm Implementation) under a new subsection titled "Tool Descriptions."
+Add the TensorBoard visualizations in Chapter 4.4 (Visualization of Training Progress) to demonstrate training evolution.
+
+8. Input Parameters, Metrics, and Variables 
+What to Do:
+Add details about input options, parameters, and important variables like the L and R wrist. 
+How:
+Update the Try9.ipynb notebook to include comments and explanations for the input parameters used in the models (e.g., joint angle, velocity, acceleration).
+Add a new section explaining the importance of monitoring the L and R wrist to track patients' progress. (FEITO)
+Where:
+Add this in Chapter 3.1 (Model’s Implementation) as a subsection called "Input Parameters and Variables."
+
+
+############################################################################################################################################################
+
+1. Literature Review Expansion [FEITO]
+What to Do:
+Expand the literature review to include transfer learning and model-based reinforcement learning.
+
+How:
+Add new subsections in Chapter 2, titled "Transfer Learning for Personalized Rehabilitation" and "Model-Based Reinforcement Learning for Goal Adaptation."
+Reference new studies that show how transfer learning can improve adaptability in robotic systems, especially in healthcare settings, for stroke rehabilitation.
+Where:
+Add these new subsections in Chapter 2: Background. A suggested placement would be after Section 2.3 (Imitation Learning for Enhanced Adaptability) to create a more complete literature context.
+
+
+9. What Would You Do Differently? (Reflections) [FEITO]
+What to Do:
+Provide reflections on what could be done differently if restarting the project.
+
+How:
+Add reflections about possibly exploring other algorithms (e.g., SAC, TRPO) earlier, collecting more diverse data, or automating hyperparameter tuning.
+Where:
+Add this under Chapter 5.2 (Future Work and Recommendations) in a section titled "Lessons Learned and Project Reflections."
+
+
+
+
+10. Formalizing the Problem and Adding More Background Studies [FEITO]
+What to Do:
+Formalize the problem with mathematical equations and expand the background on learning models.
+
+How:
+Use Markov Decision Process (MDP) formalism to describe the SAR's interaction with the patient environment. Add state, action, and reward definitions.
+Expand Chapter 2 to include more studies, citing works from experts like Min Hun Lee that match your project's vision.
+Where:
+Add formal MDP descriptions in Appendix A.1 (Reinforcement Learning Derivations) to provide a more theoretical underpinning for the problem statement. 
+Expand Chapter 2 with an additional subsection called "Learning Models in Healthcare Robotics."
+
+
+
+
+#################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+Still missing in Try9.ipynb:
+
+
+1.	Exploratory Data Analysis (EDA) Fixes & Enhancements:
+
+		Ensure it reflects the Kinect camera’s 30fps sampling rate.
+		Confirm cumulative progress is calculated correctly and aligns with trained output.
+		Include analysis on the model’s predictions alongside the captured data for richer insights.
+
+2.	Baseline Heuristic Approach Evaluation:
+
+		Make sure the heuristic also evaluates the model’s trained output, not just raw patient data.
+
+
+3.	Model-Based Reinforcement Learning (MBRL) Implementation:
+
+		It’s listed as "Feito", but double-check if it’s working and correctly comparing MBRL to PPO and the heuristic approach with visualizations.
+
+
+4.	Referencing Tools and TensorBoard Graphs:
+
+		Add references to OpenAI Gym, TensorBoard, and SB3. (paper not code)
+		Export TensorBoard training graphs and save them as figures in the notebook.
+
+
+5.	Formalizing Input Parameters and Variables:
+
+		Ensure key input parameters (like joint angles, velocity, and acceleration) are well-documented in the code.
+		Emphasize the importance of tracking L and R wrist positions for patient progress analysis.(paper not code)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

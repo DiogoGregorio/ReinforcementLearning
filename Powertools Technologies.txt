@@ -1,0 +1,207 @@
+Sobre a Powertools Technologies
+
+O que dizem sobre si
+
+A empresa descreve-se como “full-stack engineering and software services company based in Lisbon, Portugal, focused on delivering … both on bare metal, on mobile or web apps the right tools for tomorrow needs”. 
+powertools-tech.com
++2
+powertools-tech.com
++2
+
+Revelam que a “journey started on IC design, providing services on IT, Electronic Design Automation (EDA), and Verification of analog/mixed-signal circuits”. 
+powertools-tech.com
++1
+
+O fundador é Pedro Ventura, engenheiro eletrónico com larga experiência na indústria de semicondutores, tendo passado por design analógico e depois EDA/automação. 
+powertools-tech.com
+
+A empresa parece estar numa escala relativamente pequena (por “young” ou “engineering & software services” com foco especializado), e aparece listada como “1-10 Employees” ou “A 1-10 employees” em alguma base de dados de empresas em Portugal. 
+ensun
++1
+
+O que isso sugere em termos culturais/organização
+
+Por ter origem no design de circuitos integrados analógicos/misturados (AMS) e migração para serviços de software/automação/EDA, a cultura provavelmente mistura engenharia “deep-tech” (hardware/IC/EDA) com mais fluidez de software/automação.
+
+Como é uma empresa mais nicho/segmentada, pode ter menor burocracia que grandes grupos, o que pode significar maior responsabilidade cedo, necessidade de autonomia, e exposição a vários domínios (script, automação, suporte a designers de IC, workflow setup).
+
+A experiência pode requerer que uses tanto competências técnicas como de “serviço ao cliente interno/external” (ou seja, ajudar designers de ICs a usar flows, fazer automações, etc).
+
+Em termos de progressão, sendo escala reduzida, a visibilidade imediata do teu trabalho será provavelmente maior — podes “fazer a diferença” mais rapidamente.
+
+O que o teu perfil poderia trazer à Powertools Technologies
+
+Dado que tu tens experiência 100% em software, e agora estás a trabalhar em scripting/automação em projetos de ICs, eis como podes encaixar muito bem e as vantagens que podes trazer:
+
+Como encaixas bem
+
+A empresa faz EDA/automação para designers de circuitos integrados analógicos/misturados — se já estás a fazer scripting/automação num contexto de ICs, estás precisamente na interseção.
+
+O facto de vires mais do software (aparentemente) significa que podes trazer boas práticas de desenvolvimento de scripts, automação, talvez frameworks para manutenção, reutilização, versionamento de scripts, estruturação de flows.
+
+Se estás a trabalhar com workflows de IC design (ex: setup de toolchains, pipelines, automação de tasks repetitivas) então tens um “match” com o que a empresa oferece — serviços de “workflow setup”, assistência a designers, scripting, software.
+
+Podias ajudar a empresa a “industrializar” ou escalar os seus serviços: não só fazer automações específicas de projecto, mas desenvolver componentes genéricos, frameworks de automação, boas práticas de devops/variantes de tool-flow, que ajudam a empresa crescer em eficiência.
+
+Vantagens que trarias
+
+Melhoria de produtividade: Ao automatizar tasks repetitivas ou criar scripts reutilizáveis, reduz-se o tempo que designers de IC ginham de esperar ou de fazer manualmente — isso é valor direto.
+
+Integração software/hardware: Muitas vezes, em IC design, o gap entre “design de circuito” e “ferramentas/automação” é grande. Alguém com background de software plus conhecimento de IC scripting/automação pode fazer de ponte.
+
+Escalabilidade / manutenção: Em vez de cada projecto reinventar automações, podes criar frameworks ou boas práticas que a empresa usa em múltiplos clientes/projetos, aumentando a margem de serviço da empresa.
+
+Flexibilidade e crescimento: Como estás já a transicionar para automação/EDA, podes evoluir internamente para papéis mais híbridos: EDA automation engineer, flujo de design, tool engineer, etc., o que dá boas oportunidades num context como este.
+
+Diferencial competitivo: Para a empresa, ter alguém com tua combinação (software forte + automação IC/EDA) é valioso, porque poucas pessoas têm o “ambos” — muitos são hardware/IC focalizados ou puro software, mas menos têm a automação/EDA combo.
+
+Alguns aspetos que podrías destacar no CV/entrevista
+
+Exemplos concretos de scripts ou automações que fizeste: qual o problema, qual a solução, que ferramenta, qual o ganho (tempo, erros evitados).
+
+Familiaridade com workflows de IC design / EDA tools: mesmo que não sejaste o designer de circuito, mostrar que entendes a flow (schematic → simulation → layout → verification) e onde a automação entra pode diferenciar-te.
+
+Ferramentas e linguagens: Python, Tcl, Shell, automação de pipelines, version control, talvez Linux/Unix (muito comum em flows IC).
+
+Soft skills: trabalhar com designers de ICs (que são focados em hardware/analógico), saber “traduzir” necessidades de design para automação, comunicação, entregas.
+
+Capacidade de escalar/industrializar automação (não só “resolver um projecto”, mas “resolver de modo reutilizável”).
+
+Flexibilidade e vontade de aprender domínio analógico/misturado, se não tiveres ainda profundo background nisso — isso mostra que podes crescer no papel.
+
+Experiência de entrevistas e preparação
+
+Não encontrei informação pública específica sobre o processo de entrevistas da Powertools Technologies (por exemplo, reviews de candidatos ou descrição detalhada). Contudo, com base no que se sabe do sector, da localização (Portugal) e empresas similares em EDA/automação, pode-se inferir o seguinte e dar recomendações.
+
+Provável estrutura de entrevista
+
+Primeira fase: triagem com RH ou responsável de contratação — perguntas sobre teu background, motivação, porque a empresa, interesse no domínio EDA/IC.
+
+Segunda fase: técnico — pode incluir discussão dos teus projetos de automação, scripting, talvez um teste com script ou pensar em automação de fluxo (ex: “como automatizarias tal parte do fluxo de IC design?”).
+
+Terceira fase: discussão mais aplicada/domínio: vê-se se conheces (ou estás disposto a aprender) o mundo de IC design, EDA tools, as constraints de AMS (analog/mixed signal) — podes não precisar ser designer de circuito, mas mostrar compreensão da relevância da automação naquele contexto.
+
+Possivelmente entrevista com o gestor ou fundador para avaliar fit cultural, autonomia, iniciativa, visão.
+
+Dependendo do papel, talvez apresentação de um caso ou explicar um script/automação que fizeste.
+
+Como te preparar
+
+Prepara-te para explicar claramente o valor que trouxeste em automação: “antes vs depois”, métricas, impacto.
+
+Garante que tens familiaridade com os termos básicos de IC/EDA: analog vs digital, mixed signal, verification, flow components, toolchains. Mesmo que não sejas designer, mostra que sabes o que estás a automatizar.
+
+Reflete sobre workflow de design de ICs: onde há gargalos, quais processos são repetitivos, onde a automação pode ajudar. Pense em exemplos: setup de ambiente, geração de testbenches, regression runs, layout verification, script de relatório, etc.
+
+Mostra proficiência com linguagens de script (Python, Tcl, Shell) e boas práticas de desenvolvimento (version control, modularidade, testes simples).
+
+Demonstra vontade de aprender o domínio analog/mixed signal (se ainda não tens profundo). Podes mencionar que vienes do software e estás “upskilling” nessa vertente.
+
+Prepara-te para perguntas de soft skills: colaborar com designers, clientes internos, gerir prioridades, resolver problemas imprevistos, qualidade/robustez das automações.
+
+Pensa numa “história” de automação que fizeste, mas também esteja pronto para responder a “como automatas isto se fosse amanhã?” — ou seja, um problema hipotético de IC design que podes automatizar.
+
+Vantagens competitivas no teu perfil
+
+Porque estás a fazer a transição de software → automação de EDA, estás numa boa posição para ser “ponte” entre dois mundos.
+
+Se trouxeres exemplos concretos de scripting/automação, isso será forte diferencial, especialmente porque muitos perfis em EDA consultoria podem vir mais da engenharia de circuitos e menos da automação de software.
+
+A empresa, por seu tamanho, provavelmente valoriza pessoas que assumem responsabilidade, são auto-suficientes, e que possam tocar várias partes do processo — isso favorece quem tem versatilidade.
+
+Se tens consciência de software engineering/troubleshooting, podes ajudar a tornar os workflows mais robustos/reutilizáveis, o que é uma vantagem empresarial.
+
+
+✅ O que os dados de mercado dizem
+Faixa salarial para “Automation Engineer” em Portugal
+
+No site SalaryExplorer: para “Automation Engineer” em Portugal (todos os níveis) a média está em cerca de 2.430 € grossos/mês (~29.100 €/ano) para o perfil geral. 
+Salary Explorer
+
+Para 0-2 anos: ~1.440€/mês. 
+Salary Explorer
+
+Para 5-10 anos experiência: ~2.500€/mês. 
+Salary Explorer
+
+No site WorldSalaries para Lisboa: 0-2 anos cerca de 16.980€/ano; 2-5 anos ~25.220€/ano; 5-10 anos ~32.420€/ano. 
+World Salaries
+
+Em Glassdoor, há registos para “Automation Engineer” em Portugal/Lisboa que indicam ~€28k/ano para 1-3 anos de experiência. 
+Glassdoor
++1
+
+Outras referências & contexto
+
+Em fóruns Reddit, para perfis de software/engenharia em Portugal é dito que os salários “normais” para desenvolvedores mid-level rondam algo como 2.200-2.700 € brutos/mês. 
+Reddit
++1
+
+Também há menções de empresas estrangeiras/remote que pagam mais, mas internamente em Portugal os salários tendem a ser mais baixos do que em mercados mais maduros. 
+Reddit
+
+🎯 Aplicando ao teu caso na Powertools Technologies
+
+Dado o teu perfil (vindo de software, agora com scripting/automação em IC/EDA), aqui vão estimativas e o que considerar:
+
+Dependendo da tua experiência total, e mais especificamente da experiência em automação/EDA, provavelmente estarás na faixa de mid-level para automação especializada — não júnior completo, já estás a fazer automação de fluxo.
+
+Numa empresa de nicho/consultoria como a Powertools, pode haver valor adicional por especialização (script/automação em IC design) que não aparece diretamente nas bases genéricas.
+
+Assim, uma faixa salarial justa para ti poderia estar entre ~ €30.000-€40.000/ano brutos (ou cerca ~2.500-3.300 €/mês) se estiveres já com alguns anos na automação e alguma independência. Se ainda for início nessa vertente automação-EDA, talvez ~€25.000-€30.000/ano.
+
+Outros benefícios (flexibilidade, participação em projectos IC, possibilidade de crescimento rápido) podem compensar se a base for um pouco mais modesta.
+
+⚠️ Considerações e variáveis que influenciam
+
+A remuneração varia muito com experiência específica (quantos anos de automação/EDA), complexidade dos projectos, papel de “consultoria” vs interno, se há componente de gestão ou não.
+
+Benefícios como bónus, participação em lucro, possibilidade de remote/híbrido, formação, podem fazer diferença.
+
+Em empresas mais pequenas ou especializadas, muitas vezes há maiores oportunidades de crescimento e responsabilidade mais rápida, o que pode ser parte da oferta de valor.
+
+Negociação: ter clareza do que trazes (software forte + automação em IC) permite pedir um valor acima da média genérica de “automation engineer”.
+
+
+🔍 O que achei
+
+Na base de dados de empresas portuguesas, aparece como “Sftw – Powertools Tecnhologies, Lda”, com sede no Areeiro, Lisboa. 
+Empresite Portugal
+
+No site da empresa, dizem que começaram no design de CI (“IC design, providing services on … Electronic Design Automation (EDA), Verification of analog/mixed-signal circuits”). 
+powertools-tech.com
++1
+
+A empresa aparece listada em “ensun” (base de dados de empresas) como tendo 1-10 funcionários e fundada em 2013. 
+ensun
+
+Um dado menos positivo: segundo “Empresite”, as vendas da empresa em 2024 “foram decrescentes em respeito ao ano anterior” e “os resultados da empresa … foram decrescentes”. 
+Empresite Portugal
+
+✅ O que isto sugere (e o que perguntar)
+
+O facto de ser uma empresa de pequena dimensão (1-10 empregados) implica que podes esperar maior visibilidade, maior contacto directo com a gestão, e possivelmente mais diversidade de tarefas (o que pode ser positivo dada a tua transição software→automação).
+
+Por outro lado, empresas pequenas têm recursos mais limitados: pode haver menos estrutura formal (onboarding, planos de carreira definidos, etc).
+
+O facto dos resultados comerciais estarem decrescentes sugere que poderão estar em fase de “pivot” ou a reforçar a componente de automação/serviços para se diferenciar — o que pode significar oportunidade de crescimento, mas também risco de instabilidade.
+
+Dado que não aparecem muitas (ou nenhumas) reviews de empregados, isso pode significar que: ou pouca gente falou publicamente, ou que o ambiente de trabalho ainda não é amplamente divulgado.
+
+🎯 Perguntas que vale fazer durante a entrevista
+
+Para compensar a falta de reviews públicas, podes preparar-te com perguntas para clarificar o ambiente e a estrutura:
+
+Estrutura da equipa & crescimento: “Quantas pessoas na equipa fazem automação/EDA hoje? Qual a evolução esperada nos próximos 12-24 meses?”
+
+Processos/formalidades: “Como é feito o onboarding de novos colaboradores? Existe plano de formação ou mentor para quem entra numa função híbrida (software+automação)?”
+
+Responsabilidade e autonomia: “Qual o grau de autonomia esperado? Eu posso definir scripts/workflows para múltiplos projectos ou estarei limitado a um único projectos cliente?”
+
+Stabilidade e pipeline de negócio: “Têm uma base de clientes estável ou estão a expandir para novos mercados? Como estão a gerir o crescimento?”
+
+Remuneração & progressão: “Como é definido o pacote – salário fixo, bónus, participação, revisões salariais? Quais critérios de progressão/performance?”
+
+Cultura & ambiente: “Como é a cultura da empresa? Mesmo sendo pequena, como se comunicam os objectivos, e como lidam com falhas ou mudança de requisitos?”
+
+Ferramentas/infraestrutura: “Que ferramentas de automação usam hoje? Posso propor novas? Qual a liberdade de inovação?”

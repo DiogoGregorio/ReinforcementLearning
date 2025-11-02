@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Görer, Binnur
+AU  - Salah, Albert Ali
+AU  - Akın, H. Levent
+PY  - 2017
+DA  - 2017/03/01
+TI  - An autonomous robotic exercise tutor for elderly people
+JO  - Autonomous Robots
+SP  - 657
+EP  - 678
+VL  - 41
+IS  - 3
+AB  - Ambient assisted living proposes to utilize technological solutions to sustain the well being of elderly people. In accordance with the vision of successful aging, we describe in this study an autonomous robotic exercise tutor for elderly people. The robot learns a set of physical exercises from a human demonstrator in an imitation framework, and performs these motions in an exercise scenario, while monitoring the elderly person to provide verbal feedback. We developed an exercise program in collaboration with a nursing home, and tested our system in a real world scenario with visitors of a day care center, over multiple sessions. We provide a detailed description of the system implementation, as well as our observations for the exercise program. For the study held in the day care center, video annotations and user self-assessments are evaluated to measure the overall performance of the system and to validate our approach. The analysis revealed that elderly people can successfully exercise with the assistance of the robot, while staying engaged with the system over multiple sessions.
+SN  - 1573-7527
+UR  - https://doi.org/10.1007/s10514-016-9598-5
+DO  - 10.1007/s10514-016-9598-5
+ID  - Görer2017
+ER  - 
